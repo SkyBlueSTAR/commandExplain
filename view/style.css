@@ -7,13 +7,13 @@ body {
 }
 
 a.game-button {
-    color: #fff;
+    color: #4d4d4d;
     text-decoration: none;
     border-radius: 0;
     background: #c6c6c6;
     outline: solid 4px #131313;
     padding: 20px;
-    margin: 100px;
+    margin: 107px;
     border-top: 4px solid #f7f7f7;
     border-left: 4px solid #f7f7f7;
     border-right: 4px solid #656465;
@@ -22,12 +22,8 @@ a.game-button {
 
 a.game-button:hover {
     color: #fff;
-    text-decoration: none;
-    border-radius: 0;
     background: #218306;
     outline: solid 4px #ffffff;
-    padding: 20px;
-    margin: 100px;
     border-top: 4px solid #17cd07;
     border-left: 4px solid #17cd07;
     border-right: 4px solid #004e00;
@@ -35,10 +31,11 @@ a.game-button:hover {
 }
 
 input.game-input {
-    color: #fff;
+    color: #ffffff;
     border-radius: 0;
-    padding: 20px;
-    margin: 100px;
+    caret-color: #509150;
+    padding: 13px;
+    margin: 107px;
     background: #5e5e5e;
     outline: solid 4px #000000;
     border-left: none;
@@ -48,14 +45,5 @@ input.game-input {
 }
 
 input.game-input:hover {
-    color: #fff;
-    border-radius: 0;
-    padding: 20px;
-    margin: 100px;
-    background: #5e5e5e;
     outline: solid 4px #ffffff;
-    border-left: none;
-    border-right: none;
-    border-top: 4px solid #464446;
-    border-bottom: 4px solid #b2b2b2;
 }
