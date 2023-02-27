@@ -1,1 +1,36 @@
+body {
+    background-color: #090909;
+}
 
+.flexbox {
+    display: flex;
+}
+
+a.command-button {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0;
+    background: #c6c6c6;
+    outline: solid 4px #131313;
+    padding: 20px;
+    margin: 100px;
+    border-top: 4px solid #f7f7f7;
+    border-left: 4px solid #f7f7f7;
+    border-right: 4px solid #656465;
+    border-bottom: 4px solid #656465;
+
+}
+
+a.command-button:hover {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0;
+    background: #218306;
+    outline: solid 4px #ffffff;
+    padding: 20px;
+    margin: 100px;
+    border-top: 4px solid #17cd07;
+    border-left: 4px solid #17cd07;
+    border-right: 4px solid #004e00;
+    border-bottom: 4px solid #004e00;
+}
