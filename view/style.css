@@ -6,7 +6,7 @@ body {
     display: flex;
 }
 
-a.command-button {
+a.game-button {
     color: #fff;
     text-decoration: none;
     border-radius: 0;
@@ -18,10 +18,9 @@ a.command-button {
     border-left: 4px solid #f7f7f7;
     border-right: 4px solid #656465;
     border-bottom: 4px solid #656465;
-
 }
 
-a.command-button:hover {
+a.game-button:hover {
     color: #fff;
     text-decoration: none;
     border-radius: 0;
@@ -33,4 +32,30 @@ a.command-button:hover {
     border-left: 4px solid #17cd07;
     border-right: 4px solid #004e00;
     border-bottom: 4px solid #004e00;
+}
+
+input.game-input {
+    color: #fff;
+    border-radius: 0;
+    padding: 20px;
+    margin: 100px;
+    background: #5e5e5e;
+    outline: solid 4px #000000;
+    border-left: none;
+    border-right: none;
+    border-top: 4px solid #464446;
+    border-bottom: 4px solid #b2b2b2;
+}
+
+input.game-input:hover {
+    color: #fff;
+    border-radius: 0;
+    padding: 20px;
+    margin: 100px;
+    background: #5e5e5e;
+    outline: solid 4px #ffffff;
+    border-left: none;
+    border-right: none;
+    border-top: 4px solid #464446;
+    border-bottom: 4px solid #b2b2b2;
 }
