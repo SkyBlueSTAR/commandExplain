@@ -1,49 +1,37 @@
-body {
-    background-color: #090909;
+.wrapper {
+    margin: 3vw;
 }
 
-.flexbox {
+.container {
+    margin: 1.7vh;
+}
+
+.row {
     display: flex;
+    flex-flow: row;
 }
 
-a.game-button {
-    color: #4d4d4d;
-    text-decoration: none;
-    border-radius: 0;
-    background: #c6c6c6;
-    outline: solid 4px #131313;
-    padding: 20px;
-    margin: 107px;
-    border-top: 4px solid #f7f7f7;
-    border-left: 4px solid #f7f7f7;
-    border-right: 4px solid #656465;
-    border-bottom: 4px solid #656465;
+.row-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
 }
 
-a.game-button:hover {
-    color: #fff;
-    background: #218306;
-    outline: solid 4px #ffffff;
-    border-top: 4px solid #17cd07;
-    border-left: 4px solid #17cd07;
-    border-right: 4px solid #004e00;
-    border-bottom: 4px solid #004e00;
+.row-list::-webkit-scrollbar {
+    display: none;
 }
 
-input.game-input {
-    color: #ffffff;
-    border-radius: 0;
-    caret-color: #509150;
-    padding: 13px;
-    margin: 107px;
-    background: #5e5e5e;
-    outline: solid 4px #000000;
-    border-left: none;
-    border-right: none;
-    border-top: 4px solid #464446;
-    border-bottom: 4px solid #b2b2b2;
+.column {
+    display: flex;
+    flex-flow: column;
 }
 
-input.game-input:hover {
-    outline: solid 4px #ffffff;
+.column-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.column-list::-webkit-scrollbar {
+    display: none;
 }

@@ -1,0 +1,17 @@
+.command-row {
+    height: 24.5vh;
+    margin: 1.5vh;
+    background-color: #090909;
+    border-top: 4px solid #393939;
+    border-left: 4px solid #393939;
+    border-right: 4px solid #6b6b6b;
+    border-bottom: 4px solid #ffffff;
+}
+
+.command-left {
+    width: 60%;
+}
+
+.command-right {
+    width: 100%;
+}
