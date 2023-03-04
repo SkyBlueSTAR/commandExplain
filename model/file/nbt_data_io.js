@@ -1,8 +1,8 @@
-import pnbt from './pnbt.js';
+const pnbt = require('prismarine-nbt');
 
-//nbtToJSON(reader:FileReader): Promise<String>
+//nbtToJSON(reader:Buffer object): Promise<String>
 //This function can throw error.
-export async function nbtToJSON(reader) {
+exports.nbtToJSON = async function (file) {
     try {
         const { parsed } = await pnbt.parse(Buffer.from(reader.result), 'little');
         return JSON.stringify(parsed, null, 2);
@@ -14,7 +14,7 @@ export async function nbtToJSON(reader) {
 //JSONToNbt(json:String)
 //Returns a buffer with a serialized nbt value.
 //This function can throw error.
-export async function JSONToNbt(json) {
+exports.JSONToNbt = async function (json) {
     try {
         const obj = JSON.parse(json);
         return await pnbt.writeUncompressed(obj, 'little')
@@ -23,11 +23,11 @@ export async function JSONToNbt(json) {
     }
 }
 
-//nbtToJSON(reader:FileReader): Promise<Object>
-//This function can throw error.
-export async function nbtToObject(reader) {
+//nbtToObject(file:Buffer object): Promise<Object>
+//This function can throw error.y
+exports.nbtToObject = async function (file) {
     try {
-        const { parsed } = await pnbt.parse(Buffer.from(reader.result), 'little');
+        const { parsed } = await pnbt.parse(Buffer.from(file), 'little');
         return parsed;
     } catch (e) {
         return e;
@@ -37,7 +37,7 @@ export async function nbtToObject(reader) {
 //objectToNbt(obj:Object)
 //Returns a buffer with a serialized nbt value.
 //This function can throw error.
-export async function objectToNbt(obj) {
+exports.objectToNbt = async function (obj) {
     try {
         return await pnbt.writeUncompressed(obj, 'little')
     } catch (e) {
