@@ -1,5 +1,5 @@
-exports.getBlockIndices = function (structureData) {
-    return structureData.block_indices.value.value[0].value;
+exports.getBlockIndices = function (structureData, index) {
+    return structureData.block_indices.value.value[0].value[index];
 }
 
 exports.getBlockName = function (structureData, index) {

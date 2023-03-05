@@ -2,6 +2,7 @@ const fs = require('fs/promises')
 const { nbtToObject } = require('../model/file/nbt_data_io');
 const { getStructureData } = require('../model/json/get_structure_data');
 const { getBlockIndices, getBlockName, getBlockConditionalBit, getBlockFacingDirection, getBlockCommand, getBlockCustomName, getBlockExecuteOnFirstTick, getBlockLPCommandMode, getBlockLPCondionalMode, getBlockLPRedstoneMode, getBlockTickDelay, getBlockconditionalMode } = require('../model/json/get_block_data');
+const { createBlockData } = require('../model/json/create_block_data');
 
 async function test() {
     const testData = await fs.readFile('test_data/CommandBloks.mcstructure');
@@ -35,4 +36,11 @@ async function test() {
     console.log(blockTickDelay);
     console.log(blockconditionalMode);
 }
-test();
+// test();
+
+async function test0() {
+    const testData = await fs.readFile('test_data/CommandBloks.mcstructure');
+    blockData = await createBlockData(testData, 2);
+    console.log(blockData);
+}
+test0();
